@@ -1,0 +1,43 @@
+seed: 42
+report_to: "none"
+
+
+dataset:
+  dataset: "ptm"
+  dataset_type: "csv"
+  dataset_loc: "protein_lm/dataset/ptm_labels.csv"
+  subsample_size: null
+  split_seed: 2
+  val_size: 100
+  test_size: 0
+  sequence_column_name: "ori_seq"
+  max_sequence_length: 1024
+  cache_dir: "protein_lm/dataset/cache/ptm"
+
+
+training_arguments:
+  save_dir: "checkpoints/ptm-mamba"
+  num_train_epochs: 3000
+  lr: 2.0e-4
+  per_device_train_batch_size: 256 # 64 if 1 GPU
+  resume_from_checkpoint: null
+  use_esm: true
+  max_tokens_per_batch: 80000 # 80G GPU
+  sort_by_seq: true
+  sample_len_ascending: true
+  log_steps: 100
+  max_sequence_length: null
+  
+model: # default mamba 130M
+  model_type: "mamba" # ["mamba", "bidirectional_mamba"]
+  d_model: 768 
+  n_layer: 24
+  vocab_size: null # will be set by tokenizer
+  ssm_cfg: {}
+  rms_norm: true
+  residual_in_fp32: true
+  fused_add_norm: true
+  
+  esm_embed_dim: 1280
+  pretrained_checkpoint: null
+
