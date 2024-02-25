@@ -33,7 +33,7 @@ pip install -e protein_lm/tokenizer/rust_trie
 
 ## Data
 
-We collect protein sequences and their PTM annotations from Uniprot-Swissprot. The PTM annotations are represented as tokens and used to replaced the corresponding amino acids. The data can be downloaded from  . Please move the data to  `protein_lm/dataset/`.
+We collect protein sequences and their PTM annotations from Uniprot-Swissprot. The PTM annotations are represented as tokens and used to replaced the corresponding amino acids. The data can be downloaded from [here](https://drive.google.com/file/d/151KUp79tgBxphoIky1-ohyuvzIS1gtNS/view?usp=drive_link). Please place the data on  `protein_lm/dataset/`.
 
 ## Configs
 
@@ -76,7 +76,7 @@ and answer the questions asked. It will ask whether you want to use a config fil
 
 ## Inference
 
-The inference example is at `protein_lm/modeling/scripts/infer.py.` The model checkpoints can be downloaded from  . The outputs are:
+The inference example is at `protein_lm/modeling/scripts/infer.py.` The model checkpoints can be downloaded from [here](https://drive.google.com/file/d/1x_rKff0xswWU7_ixKYvZvWYZPR23cd8x/view?usp=sharing). The outputs are:
 
 ```
 Output = namedtuple("output", ["logits", "hidden_states"])
