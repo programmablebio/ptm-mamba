@@ -8,7 +8,6 @@ A PTM-Aware Protein Language Model with Bidirectional Gated Mamba Blocks.
 
 Setting up env for mamba could be a pain, alternatively we suggest using docker containers.
 
-
 #### Run container in interactive and detach mode, and mounte project dir to the container workspace.
 
 ```
@@ -34,7 +33,7 @@ pip install -e protein_lm/tokenizer/rust_trie
 
 ## Data
 
-We collect protein sequences and their PTM annotations from Uniprot-Swissprot. The PTM annotations are represented as tokens and used to replaced the amino acids. The data can be downloaded from  . Please move the data to  `protein_lm/dataset/`.
+We collect protein sequences and their PTM annotations from Uniprot-Swissprot. The PTM annotations are represented as tokens and used to replaced the corresponding amino acids. The data can be downloaded from  . Please move the data to  `protein_lm/dataset/`.
 
 ## Configs
 
