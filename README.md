@@ -93,9 +93,23 @@ print(output.logits.shape)
 print(output.hidden_states.shape)
 ```
 
-## Ackonwledgement
+## Acknowledgement
 
 This project is based on the  following codebase. Please give them a star if you like our code.
 
 - [OpenBioML/protein-lm-scaling (github.com)](https://github.com/OpenBioML/protein-lm-scaling)
 - [state-spaces/mamba (github.com)](https://github.com/state-spaces/mamba)
+
+Authors: Zhangzhi Peng and Pranam Chatterjee
+
+Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+Contact: pranam.chatterjee@duke.edu
