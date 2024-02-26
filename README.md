@@ -1,6 +1,6 @@
 # PTM-Mamba
 
-A PTM-Aware Protein Language Model with Bidirectional Gated Mamba Blocks.
+A PTM-Aware Protein Language Model with Bidirectional Gated Mamba Blocks
 
 <img src="https://github.com/programmablebio/ptm-mamba/assets/106272333/a58515f7-9804-4c4d-8cf7-835afc9b006d" width="300" height="300">
 
