@@ -141,7 +141,7 @@ def main(config_dict: DictConfig):
     )
 
 def load_ckpt(ckpt_path, tokenizer, device):
-    ckpt = torch.load(ckpt_path)
+    ckpt = torch.load(ckpt_path, weights_only=False)
     model_state_dict = ckpt["model"]
     model_config = ckpt["config"]
     model_config.vocab_size = tokenizer.get_vocab_size()
